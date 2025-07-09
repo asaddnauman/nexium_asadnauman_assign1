@@ -5,47 +5,50 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import quotes from "@/data/quotes.json";
+import Image from "next/image";
 
-export default function HomePage() {
-  const [search, setSearch] = useState("");
-  const [filteredQuotes, setFilteredQuotes] = useState(quotes);
+export default function Home() {
+  const [topic, setTopic] = useState("");
+  const [filteredQuotes, setFilteredQuotes] = useState(quotes.slice(0, 3));
 
   const handleSearch = () => {
-    const filtered = quotes.filter((quote) =>
-      quote.text.toLowerCase().includes(search.toLowerCase())
+    const result = quotes.filter((q) =>
+      q.topic.toLowerCase().includes(topic.toLowerCase())
     );
-    setFilteredQuotes(filtered);
+    setFilteredQuotes(result.slice(0, 3));
   };
 
   return (
-    <main className="p-6 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">Quote Finder</h1>
-
-      <div className="flex gap-2 mb-6">
-        <Input
-          placeholder="Search quote..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <Button onClick={handleSearch}>Search</Button>
-      </div>
-
-      {filteredQuotes.length === 0 ? (
-        <p>No quotes found.</p>
-      ) : (
-        <div className="grid gap-4">
-          {filteredQuotes.map((quote, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>{quote.author || "Unknown"}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>{quote.text}</p>
-              </CardContent>
-            </Card>
-          ))}
+    <div
+      className="min-h-screen bg-cover bg-center p-8"
+      style={{ backgroundImage: "url('/background.jpg')" }}
+    >
+      <div className="max-w-xl mx-auto text-center text-white font-serif">
+        <h1 className="text-5xl font-bold mb-6 font-decorative">
+          Quote Generator
+        </h1>
+        <div className="flex gap-2 justify-center mb-6">
+          <Input
+            placeholder="Enter a topic..."
+            className="bg-white text-black"
+            value={topic}
+            onChange={(e) => setTopic(e.target.value)}
+          />
+          <Button onClick={handleSearch}>Search</Button>
         </div>
-      )}
-    </main>
+
+        {filteredQuotes.map((quote, index) => (
+          <Card key={index} className="mb-4 bg-white/80 text-black shadow-lg">
+            <CardHeader>
+              <CardTitle>{quote.topic}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>{quote.text}</p>
+              <p className="mt-2 text-sm text-right italic">— {quote.author}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
   );
 }

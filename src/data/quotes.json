@@ -1,14 +1,22 @@
 [
   {
-    "text": "The best way to predict the future is to invent it.",
-    "author": "Alan Kay"
+    "topic": "Motivation",
+    "text": "Push yourself, because no one else is going to do it for you.",
+    "author": "Unknown"
   },
   {
-    "text": "Life is 10% what happens to us and 90% how we react to it.",
-    "author": "Charles R. Swindoll"
+    "topic": "Success",
+    "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "author": "Winston Churchill"
   },
   {
-    "text": "Your time is limited, don't waste it living someone else's life.",
-    "author": "Steve Jobs"
+    "topic": "Life",
+    "text": "In the end, we only regret the chances we didn’t take.",
+    "author": "Lewis Carroll"
+  },
+  {
+    "topic": "Motivation",
+    "text": "Dream it. Wish it. Do it.",
+    "author": "Unknown"
   }
 ]
