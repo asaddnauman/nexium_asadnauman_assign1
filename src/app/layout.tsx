@@ -1,15 +1,8 @@
 import "./globals.css";
-import { Great_Vibes } from "next/font/google";
-
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-great-vibes",
-});
 
 export const metadata = {
-  title: "Quotes App",
-  description: "A beautiful quotes app with elegant style",
+  title: "Tailwind Quote Generator",
+  description: "A modern styled quote app",
 };
 
 export default function RootLayout({
@@ -18,8 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={greatVibes.variable}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className="bg-gray-100 min-h-screen">{children}</body>
     </html>
   );
 }

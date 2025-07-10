@@ -2,43 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom base styles */
+@font-face {
+  font-family: "Gabriola";
+  src: local("Gabriola");
+}
+
 body {
   font-family: "Gabriola", cursive;
-  background-image: url("/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  color: #1f2937; /* Tailwind's gray-800 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Custom scroll behavior (optional) */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Optional: Style for input focus */
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Tailwind blue-500 */
-  border-color: rgba(59, 130, 246, 0.5);
-}
-
-/* Button hover effect */
-button:hover {
-  opacity: 0.9;
-}
-
-/* Tailwind typography plugin if using */
-.prose {
-  @apply prose-sm sm:prose lg:prose-lg xl:prose-xl;
 }
