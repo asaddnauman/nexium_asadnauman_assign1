@@ -1,22 +1,27 @@
 [
   {
     "topic": "Motivation",
-    "text": "Push yourself, because no one else is going to do it for you.",
+    "quote": "Push yourself, because no one else is going to do it for you.",
     "author": "Unknown"
   },
   {
+    "topic": "Motivation",
+    "quote": "Don’t stop when you’re tired. Stop when you’re done.",
+    "author": "Marilyn Monroe"
+  },
+  {
+    "topic": "Motivation",
+    "quote": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt"
+  },
+  {
     "topic": "Success",
-    "text": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
     "author": "Winston Churchill"
   },
   {
     "topic": "Life",
-    "text": "In the end, we only regret the chances we didn’t take.",
+    "quote": "In the end, we only regret the chances we didn’t take.",
     "author": "Lewis Carroll"
-  },
-  {
-    "topic": "Motivation",
-    "text": "Dream it. Wish it. Do it.",
-    "author": "Unknown"
   }
 ]
