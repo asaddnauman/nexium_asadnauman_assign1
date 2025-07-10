@@ -1,27 +1,27 @@
 [
   {
-    "topic": "Motivation",
+    "topic": "motivation",
     "quote": "Push yourself, because no one else is going to do it for you.",
     "author": "Unknown"
   },
   {
-    "topic": "Motivation",
-    "quote": "Don’t stop when you’re tired. Stop when you’re done.",
+    "topic": "life",
+    "quote": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon"
+  },
+  {
+    "topic": "success",
+    "quote": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau"
+  },
+  {
+    "topic": "motivation",
+    "quote": "Dream it. Wish it. Do it.",
+    "author": "Unknown"
+  },
+  {
+    "topic": "life",
+    "quote": "Keep smiling, because life is a beautiful thing and there's so much to smile about.",
     "author": "Marilyn Monroe"
-  },
-  {
-    "topic": "Motivation",
-    "quote": "Believe you can and you're halfway there.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "topic": "Success",
-    "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
-    "topic": "Life",
-    "quote": "In the end, we only regret the chances we didn’t take.",
-    "author": "Lewis Carroll"
   }
 ]

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import quotes from "@/data/quotes.json";
+import quotes from "../data/quotes.json"; // ✅ FIXED path
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -29,12 +29,12 @@ export default function QuoteGenerator() {
       className="w-screen h-screen bg-cover bg-center relative text-white"
       style={{ backgroundImage: "url('/background.png')" }}
     >
-      {/* Header at top-left */}
+      {/* Header */}
       <h1 className="absolute top-6 left-6 text-[48px] font-[Gabriola] drop-shadow-lg">
         Quote Generator
       </h1>
 
-      {/* Centered Search Box */}
+      {/* Centered Content */}
       <div className="w-full h-full flex items-center justify-center">
         <form
           onSubmit={handleSubmit}
@@ -55,7 +55,7 @@ export default function QuoteGenerator() {
             Search
           </button>
 
-          {/* Results */}
+          {/* Display Quotes */}
           <div className="w-full space-y-4 mt-6">
             {results.length > 0
               ? results.map((quote, i) => (

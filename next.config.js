@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    turbo: false, // disable Turbopack
+    turbo: {}, // ✅ FIXED: must be an object, not true
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
